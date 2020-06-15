@@ -19,7 +19,7 @@ def query_month(request):
         endtime=request.POST.get('dtp_input2')
         type=type.replace(' ', '').lower()
         print(type)
-    if type == "offerbymonth":
+    if type == "offerbymonth":  
         show=controls.offer_by_month(starttime, endtime)
     elif type=='publisherbymonth':
         show=controls.publisher_by_month(starttime, endtime)
